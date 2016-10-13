@@ -8,5 +8,5 @@ files = sorted(os.listdir('contributors'))
 # read first line of each file and print it
 for filename in files:
 	with open(os.path.join('contributors',filename)) as f:
-		print "Notes contributed by: ",f.readline().trim()
+		print "Notes contributed by: ",f.readline().strip()
 
